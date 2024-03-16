@@ -68,6 +68,7 @@ ul {
   text-align: left;
 }
 
+ 
 .subtleText {
   color: #D1D1D1;
   font-size: .75em;
@@ -124,6 +125,18 @@ ul {
   height: 500px;
 }
 
+.dog-div{
+  display: flex;
+  flex-direction: column;
+}
+.dog-div img{
+  width: 20%;
+  margin-top: 150px;
+
+}
+ 
+.dog-div h1{
+ }
 .pigTile:hover {
   transform: scale(1.05);
 }
@@ -139,6 +152,8 @@ ul {
   padding: 1%;
   clear: both;
 }
+
+
 
 
 @keyframes App-logo-spin {
