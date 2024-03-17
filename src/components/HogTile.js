@@ -1,24 +1,33 @@
 // HogTile.js
 import React, { useState } from "react";
 import hogs from "../porkers_data";
-import Details from './Details';
 
 export default function HogTile() {
-    const [details, setDetails] = useState(null);
+    const [selectedHog, setSelectedHog] = useState(null);
 
-    function changeDetails(hog) {
-        setDetails(hog);
-    }
-        
+    const handleClick = (hog) => {
+        // Toggle the selected hog
+        setSelectedHog(selectedHog === hog ? null : hog);
+    };
+
     return (
         <div className="hog-div">
-            {hogs.map((hog) => (
-                <div className="child-div" key={hog.id}>
-                    <img src={hog.image} alt={hog.name} />
-                    <h1 onClick={() => changeDetails(hog)}>{hog.name}</h1>
-                    {details && details.id === hog.id && <Details hog={details} />}
-                </div>
-            ))}
-        </div>
+        {hogs.map((hog) => (
+            <div className="child-div" key={hog.id} onClick={() => handleClick(hog)}>
+                <img src={hog.image} alt={hog.name} width="200px" />
+                <h1>{hog.name}</h1>
+                {/* Display details if hog is selected */}
+                {selectedHog === hog && (
+                    <div className="details">
+                        <p>Specialty: {hog.specialty}</p>
+                        <p>Weight: {hog.weight}</p>
+                        <p>Greased: {hog.greased ? "Yes" : "No"}</p>
+                        <p>Highest Medal Achieved: {hog["highest medal achieved"]}</p>
+                    </div>
+                )}
+            </div>
+        ))}
+    </div>
+    
     );
 }

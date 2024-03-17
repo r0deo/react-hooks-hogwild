@@ -135,12 +135,142 @@ ul {
 
 }
  
-.dog-div h1{
- }
+.btn-greased{
+  width: 120px;
+  height: 40px;
+  margin-left: 80%;
+  border-radius: 10px ;
+  background-color: rgb(246, 208, 214);
+}
 .pigTile:hover {
   transform: scale(1.05);
 }
+.Filter {
+  display: flex;
+  justify-content: center;
+}
+.Filter h1{
+  margin-top: 20px;
+  margin-left: 27px;
+}
 
+.hog-card {
+  width: 200px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hog-card:hover {
+  transform: translateY(-5px);
+}
+
+.hog-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.hog-card p {
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  flex-direction: column; /* Align items vertically */
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.sort label {
+  font-weight: bold;
+  margin-bottom: 10px; /* Add space between label and select */
+}
+
+.sort select {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.sort ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0; /* Adjust margin to position under select */
+}
+
+.sort li {
+  margin-bottom: 5px;
+  background-color: #fff; /* Change background color */
+  border-radius: 5px; /* Add border radius */
+  padding: 10px; /* Add padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.nav-add{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-add li{
+  background-color: rgb(26, 12, 23);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 50px;
+  width: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+
+}
+
+.hog-div {
+  display: flex;
+  flex-wrap: wrap;
+   flex-direction: column;
+  align-items: center;
+}
+
+.child-div {
+  width: 250px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.child-div:hover {
+  transform: translateY(-5px);
+}
+
+.child-div img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.child-div h1 {
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.details {
+  padding: 10px;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
